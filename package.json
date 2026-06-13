@@ -1,0 +1,17 @@
+{
+  "name": "traefik-manager-docs",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
+  },
+  "dependencies": {
+    "@fontsource-variable/geist": "latest",
+    "@fontsource-variable/geist-mono": "latest"
+  },
+  "devDependencies": {
+    "vitepress": "latest"
+  }
+}
