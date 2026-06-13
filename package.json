@@ -2,6 +2,7 @@
   "name": "traefik-manager-docs",
   "private": true,
   "type": "module",
+  "packageManager": "pnpm@11.3.0",
   "scripts": {
     "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
