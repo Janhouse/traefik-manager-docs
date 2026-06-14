@@ -43,4 +43,4 @@ Editing these by hand is error-prone, and there's no built-in UI for "expose thi
 
 The panel works alongside a Traefik you already operate, **or** as a self-contained bundle that runs Traefik for you and manages its static config as well. See [Deployment modes](/guide/deployment-modes) to choose.
 
-Ready to try it? Head to [Getting started](/guide/getting-started).
+Ready to try it? Run it with Docker via the [Quick start](/guide/getting-started), or set up the source for development in [Development setup](/guide/development).

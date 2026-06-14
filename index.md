@@ -10,11 +10,11 @@ hero:
     alt: Traefik Proxy Admin
   actions:
     - theme: brand
-      text: Get started
-      link: /guide/introduction
+      text: Quick start
+      link: /guide/getting-started
     - theme: alt
-      text: Deployment modes
-      link: /guide/deployment-modes
+      text: Introduction
+      link: /guide/introduction
     - theme: alt
       text: View on GitHub
       link: https://github.com/Janhouse/traefik-proxy-admin

@@ -29,7 +29,8 @@ export default defineConfig({
           text: 'Getting started',
           items: [
             { text: 'Introduction', link: '/guide/introduction' },
-            { text: 'Getting started', link: '/guide/getting-started' },
+            { text: 'Quick start (Docker)', link: '/guide/getting-started' },
+            { text: 'Development setup', link: '/guide/development' },
             { text: 'Deployment modes', link: '/guide/deployment-modes' },
           ],
         },

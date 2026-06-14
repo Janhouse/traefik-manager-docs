@@ -4,13 +4,20 @@ In managed mode the panel runs and owns **all** of Traefik — both the dynamic 
 
 ## Quick start
 
+You don't need to clone the repo — download the bundle's files and bring it up. The full copy-paste is in the [Quick start](/guide/getting-started#option-a-all-in-one-bundle); in short:
+
 ```bash
-cp docker/managed/.env.example .env
+mkdir traefik-manager && cd traefik-manager && mkdir -p docker/managed
+base=https://raw.githubusercontent.com/Janhouse/traefik-proxy-admin/main
+curl -fsSL "$base/docker-compose.managed.yml"        -o docker-compose.yml
+curl -fsSL "$base/docker/managed/.env.example"       -o .env
+curl -fsSL "$base/docker/managed/traefik-wrapper.sh" -o docker/managed/traefik-wrapper.sh
+chmod +x docker/managed/traefik-wrapper.sh
 # edit .env: set POSTGRES_PASSWORD, MANAGED_SECRETS_KEY, ADMIN_PANEL_AUTH
-docker compose -f docker-compose.managed.yml up -d
+docker compose up -d
 ```
 
-That's it — Traefik comes up with sensible defaults: a `web` entrypoint on :80 that redirects to `websecure` on :443, and a `letsencrypt` certificate resolver using the TLS challenge.
+(Cloning the repo and running `docker compose -f docker-compose.managed.yml up -d` works too.) Traefik comes up with sensible defaults: a `web` entrypoint on :80 that redirects to `websecure` on :443, and a `letsencrypt` certificate resolver using the TLS challenge.
 
 ## How it works
 

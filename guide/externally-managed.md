@@ -2,6 +2,10 @@
 
 This is the default mode: **you** run and own Traefik, and the panel supplies only the **dynamic** configuration through Traefik's HTTP provider.
 
+## Run the panel
+
+Run just the panel and its database with Docker (no need to clone the source) — the copy-paste Compose file is in [Quick start → Bring your own Traefik](/guide/getting-started#option-b-bring-your-own-traefik). Then wire your existing Traefik to it as below.
+
 ## 1. Add the panel as an HTTP provider
 
 Point Traefik at the panel's dynamic-config endpoint. In Traefik's static configuration:
